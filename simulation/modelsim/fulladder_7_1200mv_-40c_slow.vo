@@ -1,0 +1,169 @@
+// Copyright (C) 1991-2013 Altera Corporation
+// Your use of Altera Corporation's design tools, logic functions 
+// and other software and tools, and its AMPP partner logic 
+// functions, and any output files from any of the foregoing 
+// (including device programming or simulation files), and any 
+// associated documentation or information are expressly subject 
+// to the terms and conditions of the Altera Program License 
+// Subscription Agreement, Altera MegaCore Function License 
+// Agreement, or other applicable license agreement, including, 
+// without limitation, that your use is for the sole purpose of 
+// programming logic devices manufactured by Altera and sold by 
+// Altera or its authorized distributors.  Please refer to the 
+// applicable agreement for further details.
+
+// VENDOR "Altera"
+// PROGRAM "Quartus II 32-bit"
+// VERSION "Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Full Version"
+
+// DATE "12/19/2017 15:55:38"
+
+// 
+// Device: Altera EP4CE30F23I7 Package FBGA484
+// 
+
+// 
+// This Verilog file should be used for ModelSim-Altera (Verilog) only
+// 
+
+`timescale 1 ps/ 1 ps
+
+module fulladder (
+	carry,
+	A,
+	B,
+	Cin,
+	sum);
+output 	carry;
+input 	A;
+input 	B;
+input 	Cin;
+output 	sum;
+
+// Design Ports Information
+// carry	=>  Location: PIN_F1,	 I/O Standard: 2.5 V,	 Current Strength: Default
+// sum	=>  Location: PIN_B1,	 I/O Standard: 2.5 V,	 Current Strength: Default
+// B	=>  Location: PIN_H7,	 I/O Standard: 2.5 V,	 Current Strength: Default
+// Cin	=>  Location: PIN_E4,	 I/O Standard: 2.5 V,	 Current Strength: Default
+// A	=>  Location: PIN_H6,	 I/O Standard: 2.5 V,	 Current Strength: Default
+
+
+wire gnd;
+wire vcc;
+wire unknown;
+
+assign gnd = 1'b0;
+assign vcc = 1'b1;
+assign unknown = 1'bx;
+
+tri1 devclrn;
+tri1 devpor;
+tri1 devoe;
+// synopsys translate_off
+initial $sdf_annotate("fulladder_7_1200mv_-40c_v_slow.sdo");
+// synopsys translate_on
+
+wire \carry~output_o ;
+wire \sum~output_o ;
+wire \B~input_o ;
+wire \A~input_o ;
+wire \Cin~input_o ;
+wire \inst3~0_combout ;
+wire \inst1|xor~0_combout ;
+
+
+// Location: IOOBUF_X0_Y35_N16
+cycloneive_io_obuf \carry~output (
+	.i(\inst3~0_combout ),
+	.oe(vcc),
+	.seriesterminationcontrol(16'b0000000000000000),
+	.devoe(devoe),
+	.o(\carry~output_o ),
+	.obar());
+// synopsys translate_off
+defparam \carry~output .bus_hold = "false";
+defparam \carry~output .open_drain_output = "false";
+// synopsys translate_on
+
+// Location: IOOBUF_X0_Y40_N2
+cycloneive_io_obuf \sum~output (
+	.i(\inst1|xor~0_combout ),
+	.oe(vcc),
+	.seriesterminationcontrol(16'b0000000000000000),
+	.devoe(devoe),
+	.o(\sum~output_o ),
+	.obar());
+// synopsys translate_off
+defparam \sum~output .bus_hold = "false";
+defparam \sum~output .open_drain_output = "false";
+// synopsys translate_on
+
+// Location: IOIBUF_X0_Y37_N15
+cycloneive_io_ibuf \B~input (
+	.i(B),
+	.ibar(gnd),
+	.o(\B~input_o ));
+// synopsys translate_off
+defparam \B~input .bus_hold = "false";
+defparam \B~input .simulate_z_as = "z";
+// synopsys translate_on
+
+// Location: IOIBUF_X0_Y37_N22
+cycloneive_io_ibuf \A~input (
+	.i(A),
+	.ibar(gnd),
+	.o(\A~input_o ));
+// synopsys translate_off
+defparam \A~input .bus_hold = "false";
+defparam \A~input .simulate_z_as = "z";
+// synopsys translate_on
+
+// Location: IOIBUF_X0_Y39_N1
+cycloneive_io_ibuf \Cin~input (
+	.i(Cin),
+	.ibar(gnd),
+	.o(\Cin~input_o ));
+// synopsys translate_off
+defparam \Cin~input .bus_hold = "false";
+defparam \Cin~input .simulate_z_as = "z";
+// synopsys translate_on
+
+// Location: LCCOMB_X1_Y37_N24
+cycloneive_lcell_comb \inst3~0 (
+// Equation(s):
+// \inst3~0_combout  = (\B~input_o  & ((\A~input_o ) # (\Cin~input_o ))) # (!\B~input_o  & (\A~input_o  & \Cin~input_o ))
+
+	.dataa(\B~input_o ),
+	.datab(\A~input_o ),
+	.datac(gnd),
+	.datad(\Cin~input_o ),
+	.cin(gnd),
+	.combout(\inst3~0_combout ),
+	.cout());
+// synopsys translate_off
+defparam \inst3~0 .lut_mask = 16'hEE88;
+defparam \inst3~0 .sum_lutc_input = "datac";
+// synopsys translate_on
+
+// Location: LCCOMB_X1_Y37_N10
+cycloneive_lcell_comb \inst1|xor~0 (
+// Equation(s):
+// \inst1|xor~0_combout  = \B~input_o  $ (\A~input_o  $ (\Cin~input_o ))
+
+	.dataa(\B~input_o ),
+	.datab(\A~input_o ),
+	.datac(gnd),
+	.datad(\Cin~input_o ),
+	.cin(gnd),
+	.combout(\inst1|xor~0_combout ),
+	.cout());
+// synopsys translate_off
+defparam \inst1|xor~0 .lut_mask = 16'h9966;
+defparam \inst1|xor~0 .sum_lutc_input = "datac";
+// synopsys translate_on
+
+assign carry = \carry~output_o ;
+
+assign sum = \sum~output_o ;
+
+endmodule

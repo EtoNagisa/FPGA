@@ -1,0 +1,12 @@
+vendor_name = ModelSim
+source_file = 1, /home/016/a0162534/workspace/quartus/halfadder.bdf
+source_file = 1, /home/016/a0162534/workspace/quartus/fulladder.bdf
+source_file = 1, /home/016/a0162534/workspace/quartus/db/fulladder.cbx.xml
+design_name = fulladder
+instance = comp, \carry~output , carry~output, fulladder, 1
+instance = comp, \sum~output , sum~output, fulladder, 1
+instance = comp, \B~input , B~input, fulladder, 1
+instance = comp, \A~input , A~input, fulladder, 1
+instance = comp, \Cin~input , Cin~input, fulladder, 1
+instance = comp, \inst3~0 , inst3~0, fulladder, 1
+instance = comp, \inst1|xor~0 , inst1|xor~0, fulladder, 1
