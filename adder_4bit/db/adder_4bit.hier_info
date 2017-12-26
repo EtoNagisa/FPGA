@@ -1,0 +1,120 @@
+|adder_4bit
+carry <= fulladder:inst3.carry
+A[0] => fulladder:inst0.A
+A[1] => fulladder:inst1.A
+A[2] => fulladder:inst2.A
+A[3] => fulladder:inst3.A
+B[0] => fulladder:inst0.B
+B[1] => fulladder:inst1.B
+B[2] => fulladder:inst2.B
+B[3] => fulladder:inst3.B
+sum[0] <= fulladder:inst0.sum
+sum[1] <= fulladder:inst1.sum
+sum[2] <= fulladder:inst2.sum
+sum[3] <= fulladder:inst3.sum
+
+
+|adder_4bit|fulladder:inst3
+carry <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+A => halfadder:inst.A
+B => halfadder:inst.B
+C => halfadder:inst1.B
+sum <= halfadder:inst1.s
+
+
+|adder_4bit|fulladder:inst3|halfadder:inst1
+c <= and.DB_MAX_OUTPUT_PORT_TYPE
+A => and.IN0
+A => xor.IN0
+B => and.IN1
+B => xor.IN1
+s <= xor.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|adder_4bit|fulladder:inst3|halfadder:inst
+c <= and.DB_MAX_OUTPUT_PORT_TYPE
+A => and.IN0
+A => xor.IN0
+B => and.IN1
+B => xor.IN1
+s <= xor.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|adder_4bit|fulladder:inst2
+carry <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+A => halfadder:inst.A
+B => halfadder:inst.B
+C => halfadder:inst1.B
+sum <= halfadder:inst1.s
+
+
+|adder_4bit|fulladder:inst2|halfadder:inst1
+c <= and.DB_MAX_OUTPUT_PORT_TYPE
+A => and.IN0
+A => xor.IN0
+B => and.IN1
+B => xor.IN1
+s <= xor.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|adder_4bit|fulladder:inst2|halfadder:inst
+c <= and.DB_MAX_OUTPUT_PORT_TYPE
+A => and.IN0
+A => xor.IN0
+B => and.IN1
+B => xor.IN1
+s <= xor.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|adder_4bit|fulladder:inst1
+carry <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+A => halfadder:inst.A
+B => halfadder:inst.B
+C => halfadder:inst1.B
+sum <= halfadder:inst1.s
+
+
+|adder_4bit|fulladder:inst1|halfadder:inst1
+c <= and.DB_MAX_OUTPUT_PORT_TYPE
+A => and.IN0
+A => xor.IN0
+B => and.IN1
+B => xor.IN1
+s <= xor.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|adder_4bit|fulladder:inst1|halfadder:inst
+c <= and.DB_MAX_OUTPUT_PORT_TYPE
+A => and.IN0
+A => xor.IN0
+B => and.IN1
+B => xor.IN1
+s <= xor.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|adder_4bit|fulladder:inst0
+carry <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+A => halfadder:inst.A
+B => halfadder:inst.B
+C => halfadder:inst1.B
+sum <= halfadder:inst1.s
+
+
+|adder_4bit|fulladder:inst0|halfadder:inst1
+c <= and.DB_MAX_OUTPUT_PORT_TYPE
+A => and.IN0
+A => xor.IN0
+B => and.IN1
+B => xor.IN1
+s <= xor.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|adder_4bit|fulladder:inst0|halfadder:inst
+c <= and.DB_MAX_OUTPUT_PORT_TYPE
+A => and.IN0
+A => xor.IN0
+B => and.IN1
+B => xor.IN1
+s <= xor.DB_MAX_OUTPUT_PORT_TYPE
+
+
