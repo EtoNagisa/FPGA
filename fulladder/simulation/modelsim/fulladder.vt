@@ -17,7 +17,7 @@
 // suit user's needs .Comments are provided in each section to help the user    
 // fill out necessary details.                                                  
 // *****************************************************************************
-// Generated on "12/19/2017 15:57:44"
+// Generated on "01/09/2018 15:20:34"
                                                                                 
 // Verilog Test Bench template for design : fulladder
 // 
@@ -32,7 +32,7 @@ reg eachvec;
 // test vector input registers
 reg A;
 reg B;
-reg Cin;
+reg C;
 // wires                                               
 wire carry;
 wire sum;
@@ -42,8 +42,8 @@ fulladder i1 (
 // port map - connection between master ports and signals/registers   
 	.A(A),
 	.B(B),
+	.C(C),
 	.carry(carry),
-	.Cin(Cin),
 	.sum(sum)
 );
 initial                                                

@@ -7,7 +7,7 @@ vmap work gate_work
 
 vlog -vlog01compat -work work +incdir+. {fulladder_7_1200mv_100c_slow.vo}
 
-vlog -vlog01compat -work work +incdir+/home/016/a0162534/workspace/quartus/adder/simulation/modelsim {/home/016/a0162534/workspace/quartus/adder/simulation/modelsim/fulladder_test1.vt}
+vlog -vlog01compat -work work +incdir+/home/016/a0162534/workspace/quartus/fulladder/simulation/modelsim {/home/016/a0162534/workspace/quartus/fulladder/simulation/modelsim/fulladder_test1.vt}
 
 vsim -t 1ps +transport_int_delays +transport_path_delays -L altera_ver -L cycloneive_ver -L gate_work -L work -voptargs="+acc"  test1
 

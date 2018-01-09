@@ -1,5 +1,5 @@
 EDA Netlist Writer report for fulladder
-Tue Dec 26 13:51:37 2017
+Tue Jan  9 15:20:34 2018
 Quartus II 32-bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Full Version
 
 
@@ -8,9 +8,7 @@ Quartus II 32-bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Full Ver
 ---------------------
   1. Legal Notice
   2. EDA Netlist Writer Summary
-  3. Simulation Settings
-  4. Simulation Generated Files
-  5. EDA Netlist Writer Messages
+  3. EDA Netlist Writer Messages
 
 
 
@@ -36,50 +34,11 @@ applicable agreement for further details.
 +-------------------------------------------------------------------+
 ; EDA Netlist Writer Summary                                        ;
 +---------------------------+---------------------------------------+
-; EDA Netlist Writer Status ; Successful - Tue Dec 26 13:51:37 2017 ;
+; EDA Netlist Writer Status ; Successful - Tue Jan  9 15:20:34 2018 ;
 ; Revision Name             ; fulladder                             ;
 ; Top-level Entity Name     ; fulladder                             ;
 ; Family                    ; Cyclone IV E                          ;
-; Simulation Files Creation ; Successful                            ;
 +---------------------------+---------------------------------------+
-
-
-+-------------------------------------------------------------------------------------------------------------------------------+
-; Simulation Settings                                                                                                           ;
-+---------------------------------------------------------------------------------------------------+---------------------------+
-; Option                                                                                            ; Setting                   ;
-+---------------------------------------------------------------------------------------------------+---------------------------+
-; Tool Name                                                                                         ; ModelSim-Altera (Verilog) ;
-; Generate netlist for functional simulation only                                                   ; Off                       ;
-; Time scale                                                                                        ; 1 ps                      ;
-; Truncate long hierarchy paths                                                                     ; Off                       ;
-; Map illegal HDL characters                                                                        ; Off                       ;
-; Flatten buses into individual nodes                                                               ; Off                       ;
-; Maintain hierarchy                                                                                ; Off                       ;
-; Bring out device-wide set/reset signals as ports                                                  ; Off                       ;
-; Enable glitch filtering                                                                           ; Off                       ;
-; Do not write top level VHDL entity                                                                ; Off                       ;
-; Disable detection of setup and hold time violations in the input registers of bi-directional pins ; Off                       ;
-; Architecture name in VHDL output netlist                                                          ; structure                 ;
-; Generate third-party EDA tool command script for RTL functional simulation                        ; Off                       ;
-; Generate third-party EDA tool command script for gate-level simulation                            ; Off                       ;
-+---------------------------------------------------------------------------------------------------+---------------------------+
-
-
-+-----------------------------------------------------------------------------------------------------+
-; Simulation Generated Files                                                                          ;
-+-----------------------------------------------------------------------------------------------------+
-; Generated Files                                                                                     ;
-+-----------------------------------------------------------------------------------------------------+
-; /home/016/a0162534/workspace/quartus/adder/simulation/modelsim/fulladder_7_1200mv_100c_slow.vo      ;
-; /home/016/a0162534/workspace/quartus/adder/simulation/modelsim/fulladder_7_1200mv_-40c_slow.vo      ;
-; /home/016/a0162534/workspace/quartus/adder/simulation/modelsim/fulladder_min_1200mv_-40c_fast.vo    ;
-; /home/016/a0162534/workspace/quartus/adder/simulation/modelsim/fulladder.vo                         ;
-; /home/016/a0162534/workspace/quartus/adder/simulation/modelsim/fulladder_7_1200mv_100c_v_slow.sdo   ;
-; /home/016/a0162534/workspace/quartus/adder/simulation/modelsim/fulladder_7_1200mv_-40c_v_slow.sdo   ;
-; /home/016/a0162534/workspace/quartus/adder/simulation/modelsim/fulladder_min_1200mv_-40c_v_fast.sdo ;
-; /home/016/a0162534/workspace/quartus/adder/simulation/modelsim/fulladder_v.sdo                      ;
-+-----------------------------------------------------------------------------------------------------+
 
 
 +-----------------------------+
@@ -88,19 +47,12 @@ applicable agreement for further details.
 Info: *******************************************************************
 Info: Running Quartus II 32-bit EDA Netlist Writer
     Info: Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Full Version
-    Info: Processing started: Tue Dec 26 13:51:36 2017
-Info: Command: quartus_eda --read_settings_files=off --write_settings_files=off fulladder -c fulladder
-Info (204019): Generated file fulladder_7_1200mv_100c_slow.vo in folder "/home/016/a0162534/workspace/quartus/adder/simulation/modelsim/" for EDA simulation tool
-Info (204019): Generated file fulladder_7_1200mv_-40c_slow.vo in folder "/home/016/a0162534/workspace/quartus/adder/simulation/modelsim/" for EDA simulation tool
-Info (204019): Generated file fulladder_min_1200mv_-40c_fast.vo in folder "/home/016/a0162534/workspace/quartus/adder/simulation/modelsim/" for EDA simulation tool
-Info (204019): Generated file fulladder.vo in folder "/home/016/a0162534/workspace/quartus/adder/simulation/modelsim/" for EDA simulation tool
-Info (204019): Generated file fulladder_7_1200mv_100c_v_slow.sdo in folder "/home/016/a0162534/workspace/quartus/adder/simulation/modelsim/" for EDA simulation tool
-Info (204019): Generated file fulladder_7_1200mv_-40c_v_slow.sdo in folder "/home/016/a0162534/workspace/quartus/adder/simulation/modelsim/" for EDA simulation tool
-Info (204019): Generated file fulladder_min_1200mv_-40c_v_fast.sdo in folder "/home/016/a0162534/workspace/quartus/adder/simulation/modelsim/" for EDA simulation tool
-Info (204019): Generated file fulladder_v.sdo in folder "/home/016/a0162534/workspace/quartus/adder/simulation/modelsim/" for EDA simulation tool
+    Info: Processing started: Tue Jan  9 15:20:33 2018
+Info: Command: quartus_eda --read_settings_files=on --write_settings_files=off fulladder -c fulladder --gen_testbench
+Info (201000): Generated Verilog Test Bench File /home/016/a0162534/workspace/quartus/fulladder/simulation/modelsim/fulladder.vt for simulation
 Info: Quartus II 32-bit EDA Netlist Writer was successful. 0 errors, 0 warnings
-    Info: Peak virtual memory: 318 megabytes
-    Info: Processing ended: Tue Dec 26 13:51:37 2017
+    Info: Peak virtual memory: 313 megabytes
+    Info: Processing ended: Tue Jan  9 15:20:34 2018
     Info: Elapsed time: 00:00:01
     Info: Total CPU time (on all processors): 00:00:01
 

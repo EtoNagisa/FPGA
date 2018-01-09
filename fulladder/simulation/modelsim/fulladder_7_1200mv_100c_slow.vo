@@ -16,7 +16,7 @@
 // PROGRAM "Quartus II 32-bit"
 // VERSION "Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Full Version"
 
-// DATE "12/26/2017 13:51:36"
+// DATE "01/09/2018 15:20:14"
 
 // 
 // Device: Altera EP4CE30F23I7 Package FBGA484
@@ -32,19 +32,19 @@ module fulladder (
 	carry,
 	A,
 	B,
-	Cin,
+	C,
 	sum);
 output 	carry;
 input 	A;
 input 	B;
-input 	Cin;
+input 	C;
 output 	sum;
 
 // Design Ports Information
 // carry	=>  Location: PIN_F1,	 I/O Standard: 2.5 V,	 Current Strength: Default
 // sum	=>  Location: PIN_B1,	 I/O Standard: 2.5 V,	 Current Strength: Default
 // B	=>  Location: PIN_H7,	 I/O Standard: 2.5 V,	 Current Strength: Default
-// Cin	=>  Location: PIN_E4,	 I/O Standard: 2.5 V,	 Current Strength: Default
+// C	=>  Location: PIN_E4,	 I/O Standard: 2.5 V,	 Current Strength: Default
 // A	=>  Location: PIN_H6,	 I/O Standard: 2.5 V,	 Current Strength: Default
 
 
@@ -67,7 +67,7 @@ wire \carry~output_o ;
 wire \sum~output_o ;
 wire \B~input_o ;
 wire \A~input_o ;
-wire \Cin~input_o ;
+wire \C~input_o ;
 wire \inst3~0_combout ;
 wire \inst1|xor~0_combout ;
 
@@ -119,24 +119,24 @@ defparam \A~input .simulate_z_as = "z";
 // synopsys translate_on
 
 // Location: IOIBUF_X0_Y39_N1
-cycloneive_io_ibuf \Cin~input (
-	.i(Cin),
+cycloneive_io_ibuf \C~input (
+	.i(C),
 	.ibar(gnd),
-	.o(\Cin~input_o ));
+	.o(\C~input_o ));
 // synopsys translate_off
-defparam \Cin~input .bus_hold = "false";
-defparam \Cin~input .simulate_z_as = "z";
+defparam \C~input .bus_hold = "false";
+defparam \C~input .simulate_z_as = "z";
 // synopsys translate_on
 
 // Location: LCCOMB_X1_Y37_N24
 cycloneive_lcell_comb \inst3~0 (
 // Equation(s):
-// \inst3~0_combout  = (\B~input_o  & ((\A~input_o ) # (\Cin~input_o ))) # (!\B~input_o  & (\A~input_o  & \Cin~input_o ))
+// \inst3~0_combout  = (\B~input_o  & ((\A~input_o ) # (\C~input_o ))) # (!\B~input_o  & (\A~input_o  & \C~input_o ))
 
 	.dataa(\B~input_o ),
 	.datab(\A~input_o ),
 	.datac(gnd),
-	.datad(\Cin~input_o ),
+	.datad(\C~input_o ),
 	.cin(gnd),
 	.combout(\inst3~0_combout ),
 	.cout());
@@ -148,12 +148,12 @@ defparam \inst3~0 .sum_lutc_input = "datac";
 // Location: LCCOMB_X1_Y37_N10
 cycloneive_lcell_comb \inst1|xor~0 (
 // Equation(s):
-// \inst1|xor~0_combout  = \B~input_o  $ (\A~input_o  $ (\Cin~input_o ))
+// \inst1|xor~0_combout  = \B~input_o  $ (\A~input_o  $ (\C~input_o ))
 
 	.dataa(\B~input_o ),
 	.datab(\A~input_o ),
 	.datac(gnd),
-	.datad(\Cin~input_o ),
+	.datad(\C~input_o ),
 	.cin(gnd),
 	.combout(\inst1|xor~0_combout ),
 	.cout());

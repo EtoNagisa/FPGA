@@ -1,5 +1,5 @@
 Fitter report for fulladder
-Tue Dec 26 13:51:23 2017
+Tue Jan  9 15:19:59 2018
 Quartus II 32-bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Full Version
 
 
@@ -63,7 +63,7 @@ applicable agreement for further details.
 +---------------------------------------------------------------------------------------+
 ; Fitter Summary                                                                        ;
 +------------------------------------+--------------------------------------------------+
-; Fitter Status                      ; Successful - Tue Dec 26 13:51:23 2017            ;
+; Fitter Status                      ; Successful - Tue Jan  9 15:19:59 2018            ;
 ; Quartus II 32-bit Version          ; 13.0.1 Build 232 06/12/2013 SP 1 SJ Full Version ;
 ; Revision Name                      ; fulladder                                        ;
 ; Top-level Entity Name              ; fulladder                                        ;
@@ -166,7 +166,7 @@ applicable agreement for further details.
 ; carry    ; Incomplete set of assignments ;
 ; sum      ; Incomplete set of assignments ;
 ; B        ; Incomplete set of assignments ;
-; Cin      ; Incomplete set of assignments ;
+; C        ; Incomplete set of assignments ;
 ; A        ; Incomplete set of assignments ;
 +----------+-------------------------------+
 
@@ -209,7 +209,7 @@ applicable agreement for further details.
 +--------------+
 ; Pin-Out File ;
 +--------------+
-The pin-out file can be found in /home/016/a0162534/workspace/quartus/adder/output_files/fulladder.pin.
+The pin-out file can be found in /home/016/a0162534/workspace/quartus/fulladder/output_files/fulladder.pin.
 
 
 +--------------------------------------------------------------------+
@@ -339,7 +339,7 @@ The pin-out file can be found in /home/016/a0162534/workspace/quartus/adder/outp
 +------+-------+----------+--------------+--------------+--------------+-----------------------+--------------------+--------+----------------+---------------+-----------------+----------+--------------+--------------+---------------------------+----------------------+
 ; A    ; H6    ; 1        ; 0            ; 37           ; 21           ; 2                     ; 0                  ; no     ; no             ; no            ; yes             ; no       ; Off          ; 2.5 V        ; --                        ; Fitter               ;
 ; B    ; H7    ; 1        ; 0            ; 37           ; 14           ; 2                     ; 0                  ; no     ; no             ; no            ; yes             ; no       ; Off          ; 2.5 V        ; --                        ; Fitter               ;
-; Cin  ; E4    ; 1        ; 0            ; 39           ; 0            ; 2                     ; 0                  ; no     ; no             ; no            ; yes             ; no       ; Off          ; 2.5 V        ; --                        ; Fitter               ;
+; C    ; E4    ; 1        ; 0            ; 39           ; 0            ; 2                     ; 0                  ; no     ; no             ; no            ; yes             ; no       ; Off          ; 2.5 V        ; --                        ; Fitter               ;
 +------+-------+----------+--------------+--------------+--------------+-----------------------+--------------------+--------+----------------+---------------+-----------------+----------+--------------+--------------+---------------------------+----------------------+
 
 
@@ -358,7 +358,7 @@ The pin-out file can be found in /home/016/a0162534/workspace/quartus/adder/outp
 +----------+------------------------------+--------------------------+-------------------------+---------------------------+
 ; Location ; Pin Name                     ; Reserved As              ; User Signal Name        ; Pin Type                  ;
 +----------+------------------------------+--------------------------+-------------------------+---------------------------+
-; E4       ; DIFFIO_L4p, nRESET           ; Use as regular IO        ; Cin                     ; Dual Purpose Pin          ;
+; E4       ; DIFFIO_L4p, nRESET           ; Use as regular IO        ; C                       ; Dual Purpose Pin          ;
 ; D1       ; DIFFIO_L8n, DATA1, ASDO      ; As input tri-stated      ; ~ALTERA_ASDO_DATA1~     ; Dual Purpose Pin          ;
 ; E2       ; DIFFIO_L10p, FLASH_nCE, nCSO ; As input tri-stated      ; ~ALTERA_FLASH_nCE_nCSO~ ; Dual Purpose Pin          ;
 ; K6       ; nSTATUS                      ; -                        ; -                       ; Dedicated Programming Pin ;
@@ -531,7 +531,7 @@ The pin-out file can be found in /home/016/a0162534/workspace/quartus/adder/outp
 ; E1       ; 22         ; 1        ; RESERVED_INPUT_WITH_WEAK_PULLUP                           ;        ;              ;         ; Row I/O    ;                 ; no       ; On           ;
 ; E2       ; 21         ; 1        ; ~ALTERA_FLASH_nCE_nCSO~ / RESERVED_INPUT_WITH_WEAK_PULLUP ; input  ; 2.5 V        ;         ; Row I/O    ; N               ; no       ; On           ;
 ; E3       ; 9          ; 1        ; RESERVED_INPUT_WITH_WEAK_PULLUP                           ;        ;              ;         ; Row I/O    ;                 ; no       ; On           ;
-; E4       ; 8          ; 1        ; Cin                                                       ; input  ; 2.5 V        ;         ; Row I/O    ; N               ; no       ; Off          ;
+; E4       ; 8          ; 1        ; C                                                         ; input  ; 2.5 V        ;         ; Row I/O    ; N               ; no       ; Off          ;
 ; E5       ; 546        ; 8        ; RESERVED_INPUT_WITH_WEAK_PULLUP                           ;        ;              ;         ; Column I/O ;                 ; no       ; On           ;
 ; E6       ; 545        ; 8        ; RESERVED_INPUT_WITH_WEAK_PULLUP                           ;        ;              ;         ; Column I/O ;                 ; no       ; On           ;
 ; E7       ; 537        ; 8        ; RESERVED_INPUT_WITH_WEAK_PULLUP                           ;        ;              ;         ; Column I/O ;                 ; no       ; On           ;
@@ -903,7 +903,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; carry ; Output   ; --            ; --            ; --                    ; --  ; --   ;
 ; sum   ; Output   ; --            ; --            ; --                    ; --  ; --   ;
 ; B     ; Input    ; (6) 1209 ps   ; --            ; --                    ; --  ; --   ;
-; Cin   ; Input    ; (6) 1209 ps   ; --            ; --                    ; --  ; --   ;
+; C     ; Input    ; (6) 1209 ps   ; --            ; --                    ; --  ; --   ;
 ; A     ; Input    ; (6) 1209 ps   ; --            ; --                    ; --  ; --   ;
 +-------+----------+---------------+---------------+-----------------------+-----+------+
 
@@ -916,7 +916,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; B                            ;                   ;         ;
 ;      - inst3~0               ; 0                 ; 6       ;
 ;      - halfadder:inst1|xor~0 ; 0                 ; 6       ;
-; Cin                          ;                   ;         ;
+; C                            ;                   ;         ;
 ;      - inst3~0               ; 0                 ; 6       ;
 ;      - halfadder:inst1|xor~0 ; 0                 ; 6       ;
 ; A                            ;                   ;         ;
@@ -931,7 +931,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; Name                  ; Fan-Out ;
 +-----------------------+---------+
 ; A~input               ; 2       ;
-; Cin~input             ; 2       ;
+; C~input               ; 2       ;
 ; B~input               ; 2       ;
 ; halfadder:inst1|xor~0 ; 1       ;
 ; inst3~0               ; 1       ;
@@ -1075,7 +1075,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; carry              ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ;
 ; sum                ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ;
 ; B                  ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ;
-; Cin                ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ;
+; C                  ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ;
 ; A                  ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ;
 +--------------------+--------------+--------------+--------------+--------------+--------------+-----------+--------------+--------------+-----------+-----------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+-----------+--------------+--------------+
 
@@ -1152,7 +1152,7 @@ Critical Warning (169085): No exact pin location assignment(s) for 5 pins of 5 t
     Info (169086): Pin carry not assigned to an exact location on the device
     Info (169086): Pin sum not assigned to an exact location on the device
     Info (169086): Pin B not assigned to an exact location on the device
-    Info (169086): Pin Cin not assigned to an exact location on the device
+    Info (169086): Pin C not assigned to an exact location on the device
     Info (169086): Pin A not assigned to an exact location on the device
 Critical Warning (332012): Synopsys Design Constraints File file not found: 'fulladder.sdc'. A Synopsys Design Constraints File is required by the TimeQuest Timing Analyzer to get proper timing constraints. Without it, the Compiler will not properly optimize the design.
 Info (332144): No user constrained base clocks found in the design
@@ -1177,7 +1177,7 @@ Info (176215): I/O bank details before I/O pin placement
         Info (176213): I/O bank number 6 does not use VREF pins and has undetermined VCCIO pins. 1 total pin(s) used --  36 pins available
         Info (176213): I/O bank number 7 does not use VREF pins and has undetermined VCCIO pins. 0 total pin(s) used --  43 pins available
         Info (176213): I/O bank number 8 does not use VREF pins and has undetermined VCCIO pins. 0 total pin(s) used --  43 pins available
-Info (171121): Fitter preparation operations ending: elapsed time is 00:00:01
+Info (171121): Fitter preparation operations ending: elapsed time is 00:00:02
 Info (170189): Fitter placement preparation operations beginning
 Info (170190): Fitter placement preparation operations ending: elapsed time is 00:00:00
 Info (170191): Fitter placement operations beginning
@@ -1195,11 +1195,11 @@ Info (334003): Started post-fitting delay annotation
 Info (334004): Delay annotation completed successfully
 Info (334003): Started post-fitting delay annotation
 Info (334004): Delay annotation completed successfully
-Info (11218): Fitter post-fit operations ending: elapsed time is 00:00:02
-Info (144001): Generated suppressed messages file /home/016/a0162534/workspace/quartus/adder/output_files/fulladder.fit.smsg
+Info (11218): Fitter post-fit operations ending: elapsed time is 00:00:01
+Info (144001): Generated suppressed messages file /home/016/a0162534/workspace/quartus/fulladder/output_files/fulladder.fit.smsg
 Info: Quartus II 32-bit Fitter was successful. 0 errors, 4 warnings
     Info: Peak virtual memory: 579 megabytes
-    Info: Processing ended: Tue Dec 26 13:51:23 2017
+    Info: Processing ended: Tue Jan  9 15:20:00 2018
     Info: Elapsed time: 00:00:10
     Info: Total CPU time (on all processors): 00:00:11
 
@@ -1207,6 +1207,6 @@ Info: Quartus II 32-bit Fitter was successful. 0 errors, 4 warnings
 +----------------------------+
 ; Fitter Suppressed Messages ;
 +----------------------------+
-The suppressed messages can be found in /home/016/a0162534/workspace/quartus/adder/output_files/fulladder.fit.smsg.
+The suppressed messages can be found in /home/016/a0162534/workspace/quartus/fulladder/output_files/fulladder.fit.smsg.
 
 

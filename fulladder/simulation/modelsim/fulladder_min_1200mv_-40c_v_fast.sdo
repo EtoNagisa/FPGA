@@ -29,7 +29,7 @@
 (DELAYFILE
   (SDFVERSION "2.1")
   (DESIGN "fulladder")
-  (DATE "12/26/2017 13:51:37")
+  (DATE "01/09/2018 15:20:14")
   (VENDOR "Altera")
   (PROGRAM "Quartus II 32-bit")
   (VERSION "Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Full Version")
@@ -76,7 +76,7 @@
   )
   (CELL
     (CELLTYPE "cycloneive_io_ibuf")
-    (INSTANCE Cin\~input)
+    (INSTANCE C\~input)
     (DELAY
       (ABSOLUTE
         (IOPATH i o (290:290:290) (661:661:661))

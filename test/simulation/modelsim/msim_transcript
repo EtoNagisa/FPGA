@@ -1,0 +1,721 @@
+# do test_run_msim_gate_verilog.do 
+# if {[file exists gate_work]} {
+# 	vdel -lib gate_work -all
+# }
+# vlib gate_work
+# vmap work gate_work
+# Copying /opt/altera/13.0sp1/modelsim_ase/linuxaloem/../modelsim.ini to modelsim.ini
+# Modifying modelsim.ini
+# ** Warning: Copied /opt/altera/13.0sp1/modelsim_ase/linuxaloem/../modelsim.ini to modelsim.ini.
+#          Updated modelsim.ini.
+# 
+# vlog -vlog01compat -work work +incdir+. {test_7_1200mv_100c_slow.vo}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module test
+# 
+# Top level modules:
+# 	test
+# 
+# vlog -vlog01compat -work work +incdir+/home/016/a0162534/workspace/quartus/test/simulation/modelsim {/home/016/a0162534/workspace/quartus/test/simulation/modelsim/test_test1.vt}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module test_vlg_tst
+# 
+# Top level modules:
+# 	test_vlg_tst
+# 
+# vsim -t 1ps +transport_int_delays +transport_path_delays -L altera_ver -L cycloneive_ver -L gate_work -L work -voptargs="+acc"  test1
+# vsim +transport_int_delays +transport_path_delays -L altera_ver -L cycloneive_ver -L gate_work -L work -voptargs=\"+acc\" -t 1ps test1 
+# ** Error: (vsim-3170) Could not find '/home/016/a0162534/workspace/quartus/test/simulation/modelsim/gate_work.test1'.
+# Error loading design
+# Error: Error loading design 
+#        Pausing macro execution 
+# MACRO ./test_run_msim_gate_verilog.do PAUSED at line 12
+vsim -voptargs=+acc gate_work.test_vlg_tst
+# vsim -voptargs=+acc gate_work.test_vlg_tst 
+# Loading work.test_vlg_tst
+# Loading work.test
+# ** Error: (vsim-3033) test_7_1200mv_100c_slow.vo(182): Instantiation of 'cycloneive_io_obuf' failed. The design unit was not found.
+#         Region: /test_vlg_tst/i1
+#         Searched libraries:
+#             /home/016/a0162534/workspace/quartus/test/simulation/modelsim/gate_work
+# ** Error: (vsim-3033) test_7_1200mv_100c_slow.vo(195): Instantiation of 'cycloneive_io_obuf' failed. The design unit was not found.
+#         Region: /test_vlg_tst/i1
+#         Searched libraries:
+#             /home/016/a0162534/workspace/quartus/test/simulation/modelsim/gate_work
+# ** Error: (vsim-3033) test_7_1200mv_100c_slow.vo(208): Instantiation of 'cycloneive_io_obuf' failed. The design unit was not found.
+#         Region: /test_vlg_tst/i1
+#         Searched libraries:
+#             /home/016/a0162534/workspace/quartus/test/simulation/modelsim/gate_work
+# ** Error: (vsim-3033) test_7_1200mv_100c_slow.vo(221): Instantiation of 'cycloneive_io_obuf' failed. The design unit was not found.
+#         Region: /test_vlg_tst/i1
+#         Searched libraries:
+#             /home/016/a0162534/workspace/quartus/test/simulation/modelsim/gate_work
+# ** Error: (vsim-3033) test_7_1200mv_100c_slow.vo(234): Instantiation of 'cycloneive_io_obuf' failed. The design unit was not found.
+#         Region: /test_vlg_tst/i1
+#         Searched libraries:
+#             /home/016/a0162534/workspace/quartus/test/simulation/modelsim/gate_work
+# ** Error: (vsim-3033) test_7_1200mv_100c_slow.vo(247): Instantiation of 'cycloneive_io_obuf' failed. The design unit was not found.
+#         Region: /test_vlg_tst/i1
+#         Searched libraries:
+#             /home/016/a0162534/workspace/quartus/test/simulation/modelsim/gate_work
+# ** Error: (vsim-3033) test_7_1200mv_100c_slow.vo(260): Instantiation of 'cycloneive_io_obuf' failed. The design unit was not found.
+#         Region: /test_vlg_tst/i1
+#         Searched libraries:
+#             /home/016/a0162534/workspace/quartus/test/simulation/modelsim/gate_work
+# ** Error: (vsim-3033) test_7_1200mv_100c_slow.vo(273): Instantiation of 'cycloneive_io_obuf' failed. The design unit was not found.
+#         Region: /test_vlg_tst/i1
+#         Searched libraries:
+#             /home/016/a0162534/workspace/quartus/test/simulation/modelsim/gate_work
+# ** Error: (vsim-3033) test_7_1200mv_100c_slow.vo(286): Instantiation of 'cycloneive_io_obuf' failed. The design unit was not found.
+#         Region: /test_vlg_tst/i1
+#         Searched libraries:
+#             /home/016/a0162534/workspace/quartus/test/simulation/modelsim/gate_work
+# ** Error: (vsim-3033) test_7_1200mv_100c_slow.vo(299): Instantiation of 'cycloneive_io_obuf' failed. The design unit was not found.
+#         Region: /test_vlg_tst/i1
+#         Searched libraries:
+#             /home/016/a0162534/workspace/quartus/test/simulation/modelsim/gate_work
+# ** Error: (vsim-3033) test_7_1200mv_100c_slow.vo(312): Instantiation of 'cycloneive_io_obuf' failed. The design unit was not found.
+#         Region: /test_vlg_tst/i1
+#         Searched libraries:
+#             /home/016/a0162534/workspace/quartus/test/simulation/modelsim/gate_work
+# ** Error: (vsim-3033) test_7_1200mv_100c_slow.vo(325): Instantiation of 'cycloneive_io_obuf' failed. The design unit was not found.
+#         Region: /test_vlg_tst/i1
+#         Searched libraries:
+#             /home/016/a0162534/workspace/quartus/test/simulation/modelsim/gate_work
+# ** Error: (vsim-3033) test_7_1200mv_100c_slow.vo(338): Instantiation of 'cycloneive_io_obuf' failed. The design unit was not found.
+#         Region: /test_vlg_tst/i1
+#         Searched libraries:
+#             /home/016/a0162534/workspace/quartus/test/simulation/modelsim/gate_work
+# ** Error: (vsim-3033) test_7_1200mv_100c_slow.vo(351): Instantiation of 'cycloneive_io_obuf' failed. The design unit was not found.
+#         Region: /test_vlg_tst/i1
+#         Searched libraries:
+#             /home/016/a0162534/workspace/quartus/test/simulation/modelsim/gate_work
+# ** Error: (vsim-3033) test_7_1200mv_100c_slow.vo(364): Instantiation of 'cycloneive_io_obuf' failed. The design unit was not found.
+#         Region: /test_vlg_tst/i1
+#         Searched libraries:
+#             /home/016/a0162534/workspace/quartus/test/simulation/modelsim/gate_work
+# ** Error: (vsim-3033) test_7_1200mv_100c_slow.vo(377): Instantiation of 'cycloneive_io_obuf' failed. The design unit was not found.
+#         Region: /test_vlg_tst/i1
+#         Searched libraries:
+#             /home/016/a0162534/workspace/quartus/test/simulation/modelsim/gate_work
+# ** Error: (vsim-3033) test_7_1200mv_100c_slow.vo(387): Instantiation of 'cycloneive_io_ibuf' failed. The design unit was not found.
+#         Region: /test_vlg_tst/i1
+#         Searched libraries:
+#             /home/016/a0162534/workspace/quartus/test/simulation/modelsim/gate_work
+# ** Error: (vsim-3033) test_7_1200mv_100c_slow.vo(397): Instantiation of 'cycloneive_io_ibuf' failed. The design unit was not found.
+#         Region: /test_vlg_tst/i1
+#         Searched libraries:
+#             /home/016/a0162534/workspace/quartus/test/simulation/modelsim/gate_work
+# ** Error: (vsim-3033) test_7_1200mv_100c_slow.vo(407): Instantiation of 'cycloneive_io_ibuf' failed. The design unit was not found.
+#         Region: /test_vlg_tst/i1
+#         Searched libraries:
+#             /home/016/a0162534/workspace/quartus/test/simulation/modelsim/gate_work
+# ** Error: (vsim-3033) test_7_1200mv_100c_slow.vo(424): Instantiation of 'cycloneive_lcell_comb' failed. The design unit was not found.
+#         Region: /test_vlg_tst/i1
+#         Searched libraries:
+#             /home/016/a0162534/workspace/quartus/test/simulation/modelsim/gate_work
+# ** Error: (vsim-3033) test_7_1200mv_100c_slow.vo(434): Instantiation of 'cycloneive_io_ibuf' failed. The design unit was not found.
+#         Region: /test_vlg_tst/i1
+#         Searched libraries:
+#             /home/016/a0162534/workspace/quartus/test/simulation/modelsim/gate_work
+# ** Error: (vsim-3033) test_7_1200mv_100c_slow.vo(444): Instantiation of 'cycloneive_io_ibuf' failed. The design unit was not found.
+#         Region: /test_vlg_tst/i1
+#         Searched libraries:
+#             /home/016/a0162534/workspace/quartus/test/simulation/modelsim/gate_work
+# ** Error: (vsim-3033) test_7_1200mv_100c_slow.vo(461): Instantiation of 'cycloneive_lcell_comb' failed. The design unit was not found.
+#         Region: /test_vlg_tst/i1
+#         Searched libraries:
+#             /home/016/a0162534/workspace/quartus/test/simulation/modelsim/gate_work
+# ** Error: (vsim-3033) test_7_1200mv_100c_slow.vo(471): Instantiation of 'cycloneive_io_ibuf' failed. The design unit was not found.
+#         Region: /test_vlg_tst/i1
+#         Searched libraries:
+#             /home/016/a0162534/workspace/quartus/test/simulation/modelsim/gate_work
+# ** Error: (vsim-3033) test_7_1200mv_100c_slow.vo(481): Instantiation of 'cycloneive_io_ibuf' failed. The design unit was not found.
+#         Region: /test_vlg_tst/i1
+#         Searched libraries:
+#             /home/016/a0162534/workspace/quartus/test/simulation/modelsim/gate_work
+# ** Error: (vsim-3033) test_7_1200mv_100c_slow.vo(498): Instantiation of 'cycloneive_lcell_comb' failed. The design unit was not found.
+#         Region: /test_vlg_tst/i1
+#         Searched libraries:
+#             /home/016/a0162534/workspace/quartus/test/simulation/modelsim/gate_work
+# ** Error: (vsim-3033) test_7_1200mv_100c_slow.vo(508): Instantiation of 'cycloneive_io_ibuf' failed. The design unit was not found.
+#         Region: /test_vlg_tst/i1
+#         Searched libraries:
+#             /home/016/a0162534/workspace/quartus/test/simulation/modelsim/gate_work
+# ** Error: (vsim-3033) test_7_1200mv_100c_slow.vo(518): Instantiation of 'cycloneive_io_ibuf' failed. The design unit was not found.
+#         Region: /test_vlg_tst/i1
+#         Searched libraries:
+#             /home/016/a0162534/workspace/quartus/test/simulation/modelsim/gate_work
+# ** Error: (vsim-3033) test_7_1200mv_100c_slow.vo(535): Instantiation of 'cycloneive_lcell_comb' failed. The design unit was not found.
+#         Region: /test_vlg_tst/i1
+#         Searched libraries:
+#             /home/016/a0162534/workspace/quartus/test/simulation/modelsim/gate_work
+# ** Error: (vsim-3033) test_7_1200mv_100c_slow.vo(545): Instantiation of 'cycloneive_io_ibuf' failed. The design unit was not found.
+#         Region: /test_vlg_tst/i1
+#         Searched libraries:
+#             /home/016/a0162534/workspace/quartus/test/simulation/modelsim/gate_work
+# ** Error: (vsim-3033) test_7_1200mv_100c_slow.vo(555): Instantiation of 'cycloneive_io_ibuf' failed. The design unit was not found.
+#         Region: /test_vlg_tst/i1
+#         Searched libraries:
+#             /home/016/a0162534/workspace/quartus/test/simulation/modelsim/gate_work
+# ** Error: (vsim-3033) test_7_1200mv_100c_slow.vo(572): Instantiation of 'cycloneive_lcell_comb' failed. The design unit was not found.
+#         Region: /test_vlg_tst/i1
+#         Searched libraries:
+#             /home/016/a0162534/workspace/quartus/test/simulation/modelsim/gate_work
+# ** Error: (vsim-3033) test_7_1200mv_100c_slow.vo(582): Instantiation of 'cycloneive_io_ibuf' failed. The design unit was not found.
+#         Region: /test_vlg_tst/i1
+#         Searched libraries:
+#             /home/016/a0162534/workspace/quartus/test/simulation/modelsim/gate_work
+# ** Error: (vsim-3033) test_7_1200mv_100c_slow.vo(592): Instantiation of 'cycloneive_io_ibuf' failed. The design unit was not found.
+#         Region: /test_vlg_tst/i1
+#         Searched libraries:
+#             /home/016/a0162534/workspace/quartus/test/simulation/modelsim/gate_work
+# ** Error: (vsim-3033) test_7_1200mv_100c_slow.vo(609): Instantiation of 'cycloneive_lcell_comb' failed. The design unit was not found.
+#         Region: /test_vlg_tst/i1
+#         Searched libraries:
+#             /home/016/a0162534/workspace/quartus/test/simulation/modelsim/gate_work
+# ** Error: (vsim-3033) test_7_1200mv_100c_slow.vo(619): Instantiation of 'cycloneive_io_ibuf' failed. The design unit was not found.
+#         Region: /test_vlg_tst/i1
+#         Searched libraries:
+#             /home/016/a0162534/workspace/quartus/test/simulation/modelsim/gate_work
+# ** Error: (vsim-3033) test_7_1200mv_100c_slow.vo(629): Instantiation of 'cycloneive_io_ibuf' failed. The design unit was not found.
+#         Region: /test_vlg_tst/i1
+#         Searched libraries:
+#             /home/016/a0162534/workspace/quartus/test/simulation/modelsim/gate_work
+# ** Error: (vsim-3033) test_7_1200mv_100c_slow.vo(646): Instantiation of 'cycloneive_lcell_comb' failed. The design unit was not found.
+#         Region: /test_vlg_tst/i1
+#         Searched libraries:
+#             /home/016/a0162534/workspace/quartus/test/simulation/modelsim/gate_work
+# ** Error: (vsim-3033) test_7_1200mv_100c_slow.vo(656): Instantiation of 'cycloneive_io_ibuf' failed. The design unit was not found.
+#         Region: /test_vlg_tst/i1
+#         Searched libraries:
+#             /home/016/a0162534/workspace/quartus/test/simulation/modelsim/gate_work
+# ** Error: (vsim-3033) test_7_1200mv_100c_slow.vo(666): Instantiation of 'cycloneive_io_ibuf' failed. The design unit was not found.
+#         Region: /test_vlg_tst/i1
+#         Searched libraries:
+#             /home/016/a0162534/workspace/quartus/test/simulation/modelsim/gate_work
+# ** Error: (vsim-3033) test_7_1200mv_100c_slow.vo(683): Instantiation of 'cycloneive_lcell_comb' failed. The design unit was not found.
+#         Region: /test_vlg_tst/i1
+#         Searched libraries:
+#             /home/016/a0162534/workspace/quartus/test/simulation/modelsim/gate_work
+# ** Error: (vsim-3033) test_7_1200mv_100c_slow.vo(693): Instantiation of 'cycloneive_io_ibuf' failed. The design unit was not found.
+#         Region: /test_vlg_tst/i1
+#         Searched libraries:
+#             /home/016/a0162534/workspace/quartus/test/simulation/modelsim/gate_work
+# ** Error: (vsim-3033) test_7_1200mv_100c_slow.vo(703): Instantiation of 'cycloneive_io_ibuf' failed. The design unit was not found.
+#         Region: /test_vlg_tst/i1
+#         Searched libraries:
+#             /home/016/a0162534/workspace/quartus/test/simulation/modelsim/gate_work
+# ** Error: (vsim-3033) test_7_1200mv_100c_slow.vo(720): Instantiation of 'cycloneive_lcell_comb' failed. The design unit was not found.
+#         Region: /test_vlg_tst/i1
+#         Searched libraries:
+#             /home/016/a0162534/workspace/quartus/test/simulation/modelsim/gate_work
+# ** Error: (vsim-3033) test_7_1200mv_100c_slow.vo(730): Instantiation of 'cycloneive_io_ibuf' failed. The design unit was not found.
+#         Region: /test_vlg_tst/i1
+#         Searched libraries:
+#             /home/016/a0162534/workspace/quartus/test/simulation/modelsim/gate_work
+# ** Error: (vsim-3033) test_7_1200mv_100c_slow.vo(740): Instantiation of 'cycloneive_io_ibuf' failed. The design unit was not found.
+#         Region: /test_vlg_tst/i1
+#         Searched libraries:
+#             /home/016/a0162534/workspace/quartus/test/simulation/modelsim/gate_work
+# ** Error: (vsim-3033) test_7_1200mv_100c_slow.vo(757): Instantiation of 'cycloneive_lcell_comb' failed. The design unit was not found.
+#         Region: /test_vlg_tst/i1
+#         Searched libraries:
+#             /home/016/a0162534/workspace/quartus/test/simulation/modelsim/gate_work
+# ** Error: (vsim-3033) test_7_1200mv_100c_slow.vo(767): Instantiation of 'cycloneive_io_ibuf' failed. The design unit was not found.
+#         Region: /test_vlg_tst/i1
+#         Searched libraries:
+#             /home/016/a0162534/workspace/quartus/test/simulation/modelsim/gate_work
+# ** Error: (vsim-3033) test_7_1200mv_100c_slow.vo(777): Instantiation of 'cycloneive_io_ibuf' failed. The design unit was not found.
+#         Region: /test_vlg_tst/i1
+#         Searched libraries:
+#             /home/016/a0162534/workspace/quartus/test/simulation/modelsim/gate_work
+# ** Error: (vsim-3033) test_7_1200mv_100c_slow.vo(794): Instantiation of 'cycloneive_lcell_comb' failed. The design unit was not found.
+#         Region: /test_vlg_tst/i1
+#         Searched libraries:
+#             /home/016/a0162534/workspace/quartus/test/simulation/modelsim/gate_work
+# ** Error: (vsim-3033) test_7_1200mv_100c_slow.vo(804): Instantiation of 'cycloneive_io_ibuf' failed. The design unit was not found.
+#         Region: /test_vlg_tst/i1
+#         Searched libraries:
+#             /home/016/a0162534/workspace/quartus/test/simulation/modelsim/gate_work
+# ** Error: (vsim-3033) test_7_1200mv_100c_slow.vo(814): Instantiation of 'cycloneive_io_ibuf' failed. The design unit was not found.
+#         Region: /test_vlg_tst/i1
+#         Searched libraries:
+#             /home/016/a0162534/workspace/quartus/test/simulation/modelsim/gate_work
+# ** Error: (vsim-3033) test_7_1200mv_100c_slow.vo(831): Instantiation of 'cycloneive_lcell_comb' failed. The design unit was not found.
+#         Region: /test_vlg_tst/i1
+#         Searched libraries:
+#             /home/016/a0162534/workspace/quartus/test/simulation/modelsim/gate_work
+# ** Error: (vsim-3033) test_7_1200mv_100c_slow.vo(841): Instantiation of 'cycloneive_io_ibuf' failed. The design unit was not found.
+#         Region: /test_vlg_tst/i1
+#         Searched libraries:
+#             /home/016/a0162534/workspace/quartus/test/simulation/modelsim/gate_work
+# ** Error: (vsim-3033) test_7_1200mv_100c_slow.vo(851): Instantiation of 'cycloneive_io_ibuf' failed. The design unit was not found.
+#         Region: /test_vlg_tst/i1
+#         Searched libraries:
+#             /home/016/a0162534/workspace/quartus/test/simulation/modelsim/gate_work
+# ** Error: (vsim-3033) test_7_1200mv_100c_slow.vo(868): Instantiation of 'cycloneive_lcell_comb' failed. The design unit was not found.
+#         Region: /test_vlg_tst/i1
+#         Searched libraries:
+#             /home/016/a0162534/workspace/quartus/test/simulation/modelsim/gate_work
+# ** Error: (vsim-3033) test_7_1200mv_100c_slow.vo(878): Instantiation of 'cycloneive_io_ibuf' failed. The design unit was not found.
+#         Region: /test_vlg_tst/i1
+#         Searched libraries:
+#             /home/016/a0162534/workspace/quartus/test/simulation/modelsim/gate_work
+# ** Error: (vsim-3033) test_7_1200mv_100c_slow.vo(888): Instantiation of 'cycloneive_io_ibuf' failed. The design unit was not found.
+#         Region: /test_vlg_tst/i1
+#         Searched libraries:
+#             /home/016/a0162534/workspace/quartus/test/simulation/modelsim/gate_work
+# ** Error: (vsim-3033) test_7_1200mv_100c_slow.vo(905): Instantiation of 'cycloneive_lcell_comb' failed. The design unit was not found.
+#         Region: /test_vlg_tst/i1
+#         Searched libraries:
+#             /home/016/a0162534/workspace/quartus/test/simulation/modelsim/gate_work
+# ** Error: (vsim-3033) test_7_1200mv_100c_slow.vo(915): Instantiation of 'cycloneive_io_ibuf' failed. The design unit was not found.
+#         Region: /test_vlg_tst/i1
+#         Searched libraries:
+#             /home/016/a0162534/workspace/quartus/test/simulation/modelsim/gate_work
+# ** Error: (vsim-3033) test_7_1200mv_100c_slow.vo(925): Instantiation of 'cycloneive_io_ibuf' failed. The design unit was not found.
+#         Region: /test_vlg_tst/i1
+#         Searched libraries:
+#             /home/016/a0162534/workspace/quartus/test/simulation/modelsim/gate_work
+# ** Error: (vsim-3033) test_7_1200mv_100c_slow.vo(942): Instantiation of 'cycloneive_lcell_comb' failed. The design unit was not found.
+#         Region: /test_vlg_tst/i1
+#         Searched libraries:
+#             /home/016/a0162534/workspace/quartus/test/simulation/modelsim/gate_work
+# ** Error: (vsim-3033) test_7_1200mv_100c_slow.vo(952): Instantiation of 'cycloneive_io_ibuf' failed. The design unit was not found.
+#         Region: /test_vlg_tst/i1
+#         Searched libraries:
+#             /home/016/a0162534/workspace/quartus/test/simulation/modelsim/gate_work
+# ** Error: (vsim-3033) test_7_1200mv_100c_slow.vo(962): Instantiation of 'cycloneive_io_ibuf' failed. The design unit was not found.
+#         Region: /test_vlg_tst/i1
+#         Searched libraries:
+#             /home/016/a0162534/workspace/quartus/test/simulation/modelsim/gate_work
+# ** Error: (vsim-3033) test_7_1200mv_100c_slow.vo(979): Instantiation of 'cycloneive_lcell_comb' failed. The design unit was not found.
+#         Region: /test_vlg_tst/i1
+#         Searched libraries:
+#             /home/016/a0162534/workspace/quartus/test/simulation/modelsim/gate_work
+# Error loading design
+# Error: Error loading design 
+#        Pausing macro execution 
+# MACRO ./test_run_msim_gate_verilog.do PAUSED at line 12
+vlog -vlog01compat -work work +incdir+/home/016/a0162534/workspace/quartus/test/simulation/modelsim -O0 /home/016/a0162534/workspace/quartus/test/simulation/modelsim/test_test1.vt
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module test_vlg_tst
+# 
+# Top level modules:
+# 	test_vlg_tst
+vsim -L cyclone -L cycloneiv_ver -voptargs=+acc gate_work.test_vlg_tst
+# vsim -L cyclone -L cycloneiv_ver -voptargs=+acc gate_work.test_vlg_tst 
+# Loading work.test_vlg_tst
+# Loading work.test
+# ** Error: (vsim-3033) test_7_1200mv_100c_slow.vo(182): Instantiation of 'cycloneive_io_obuf' failed. The design unit was not found.
+#         Region: /test_vlg_tst/i1
+#         Searched libraries:
+#             /opt/altera/13.0sp1/modelsim_ase/altera/vhdl/cyclone
+#             /opt/altera/13.0sp1/modelsim_ase/altera/verilog/cycloneiv
+#             /home/016/a0162534/workspace/quartus/test/simulation/modelsim/gate_work
+# ** Error: (vsim-3033) test_7_1200mv_100c_slow.vo(195): Instantiation of 'cycloneive_io_obuf' failed. The design unit was not found.
+#         Region: /test_vlg_tst/i1
+#         Searched libraries:
+#             /opt/altera/13.0sp1/modelsim_ase/altera/vhdl/cyclone
+#             /opt/altera/13.0sp1/modelsim_ase/altera/verilog/cycloneiv
+#             /home/016/a0162534/workspace/quartus/test/simulation/modelsim/gate_work
+# ** Error: (vsim-3033) test_7_1200mv_100c_slow.vo(208): Instantiation of 'cycloneive_io_obuf' failed. The design unit was not found.
+#         Region: /test_vlg_tst/i1
+#         Searched libraries:
+#             /opt/altera/13.0sp1/modelsim_ase/altera/vhdl/cyclone
+#             /opt/altera/13.0sp1/modelsim_ase/altera/verilog/cycloneiv
+#             /home/016/a0162534/workspace/quartus/test/simulation/modelsim/gate_work
+# ** Error: (vsim-3033) test_7_1200mv_100c_slow.vo(221): Instantiation of 'cycloneive_io_obuf' failed. The design unit was not found.
+#         Region: /test_vlg_tst/i1
+#         Searched libraries:
+#             /opt/altera/13.0sp1/modelsim_ase/altera/vhdl/cyclone
+#             /opt/altera/13.0sp1/modelsim_ase/altera/verilog/cycloneiv
+#             /home/016/a0162534/workspace/quartus/test/simulation/modelsim/gate_work
+# ** Error: (vsim-3033) test_7_1200mv_100c_slow.vo(234): Instantiation of 'cycloneive_io_obuf' failed. The design unit was not found.
+#         Region: /test_vlg_tst/i1
+#         Searched libraries:
+#             /opt/altera/13.0sp1/modelsim_ase/altera/vhdl/cyclone
+#             /opt/altera/13.0sp1/modelsim_ase/altera/verilog/cycloneiv
+#             /home/016/a0162534/workspace/quartus/test/simulation/modelsim/gate_work
+# ** Error: (vsim-3033) test_7_1200mv_100c_slow.vo(247): Instantiation of 'cycloneive_io_obuf' failed. The design unit was not found.
+#         Region: /test_vlg_tst/i1
+#         Searched libraries:
+#             /opt/altera/13.0sp1/modelsim_ase/altera/vhdl/cyclone
+#             /opt/altera/13.0sp1/modelsim_ase/altera/verilog/cycloneiv
+#             /home/016/a0162534/workspace/quartus/test/simulation/modelsim/gate_work
+# ** Error: (vsim-3033) test_7_1200mv_100c_slow.vo(260): Instantiation of 'cycloneive_io_obuf' failed. The design unit was not found.
+#         Region: /test_vlg_tst/i1
+#         Searched libraries:
+#             /opt/altera/13.0sp1/modelsim_ase/altera/vhdl/cyclone
+#             /opt/altera/13.0sp1/modelsim_ase/altera/verilog/cycloneiv
+#             /home/016/a0162534/workspace/quartus/test/simulation/modelsim/gate_work
+# ** Error: (vsim-3033) test_7_1200mv_100c_slow.vo(273): Instantiation of 'cycloneive_io_obuf' failed. The design unit was not found.
+#         Region: /test_vlg_tst/i1
+#         Searched libraries:
+#             /opt/altera/13.0sp1/modelsim_ase/altera/vhdl/cyclone
+#             /opt/altera/13.0sp1/modelsim_ase/altera/verilog/cycloneiv
+#             /home/016/a0162534/workspace/quartus/test/simulation/modelsim/gate_work
+# ** Error: (vsim-3033) test_7_1200mv_100c_slow.vo(286): Instantiation of 'cycloneive_io_obuf' failed. The design unit was not found.
+#         Region: /test_vlg_tst/i1
+#         Searched libraries:
+#             /opt/altera/13.0sp1/modelsim_ase/altera/vhdl/cyclone
+#             /opt/altera/13.0sp1/modelsim_ase/altera/verilog/cycloneiv
+#             /home/016/a0162534/workspace/quartus/test/simulation/modelsim/gate_work
+# ** Error: (vsim-3033) test_7_1200mv_100c_slow.vo(299): Instantiation of 'cycloneive_io_obuf' failed. The design unit was not found.
+#         Region: /test_vlg_tst/i1
+#         Searched libraries:
+#             /opt/altera/13.0sp1/modelsim_ase/altera/vhdl/cyclone
+#             /opt/altera/13.0sp1/modelsim_ase/altera/verilog/cycloneiv
+#             /home/016/a0162534/workspace/quartus/test/simulation/modelsim/gate_work
+# ** Error: (vsim-3033) test_7_1200mv_100c_slow.vo(312): Instantiation of 'cycloneive_io_obuf' failed. The design unit was not found.
+#         Region: /test_vlg_tst/i1
+#         Searched libraries:
+#             /opt/altera/13.0sp1/modelsim_ase/altera/vhdl/cyclone
+#             /opt/altera/13.0sp1/modelsim_ase/altera/verilog/cycloneiv
+#             /home/016/a0162534/workspace/quartus/test/simulation/modelsim/gate_work
+# ** Error: (vsim-3033) test_7_1200mv_100c_slow.vo(325): Instantiation of 'cycloneive_io_obuf' failed. The design unit was not found.
+#         Region: /test_vlg_tst/i1
+#         Searched libraries:
+#             /opt/altera/13.0sp1/modelsim_ase/altera/vhdl/cyclone
+#             /opt/altera/13.0sp1/modelsim_ase/altera/verilog/cycloneiv
+#             /home/016/a0162534/workspace/quartus/test/simulation/modelsim/gate_work
+# ** Error: (vsim-3033) test_7_1200mv_100c_slow.vo(338): Instantiation of 'cycloneive_io_obuf' failed. The design unit was not found.
+#         Region: /test_vlg_tst/i1
+#         Searched libraries:
+#             /opt/altera/13.0sp1/modelsim_ase/altera/vhdl/cyclone
+#             /opt/altera/13.0sp1/modelsim_ase/altera/verilog/cycloneiv
+#             /home/016/a0162534/workspace/quartus/test/simulation/modelsim/gate_work
+# ** Error: (vsim-3033) test_7_1200mv_100c_slow.vo(351): Instantiation of 'cycloneive_io_obuf' failed. The design unit was not found.
+#         Region: /test_vlg_tst/i1
+#         Searched libraries:
+#             /opt/altera/13.0sp1/modelsim_ase/altera/vhdl/cyclone
+#             /opt/altera/13.0sp1/modelsim_ase/altera/verilog/cycloneiv
+#             /home/016/a0162534/workspace/quartus/test/simulation/modelsim/gate_work
+# ** Error: (vsim-3033) test_7_1200mv_100c_slow.vo(364): Instantiation of 'cycloneive_io_obuf' failed. The design unit was not found.
+#         Region: /test_vlg_tst/i1
+#         Searched libraries:
+#             /opt/altera/13.0sp1/modelsim_ase/altera/vhdl/cyclone
+#             /opt/altera/13.0sp1/modelsim_ase/altera/verilog/cycloneiv
+#             /home/016/a0162534/workspace/quartus/test/simulation/modelsim/gate_work
+# ** Error: (vsim-3033) test_7_1200mv_100c_slow.vo(377): Instantiation of 'cycloneive_io_obuf' failed. The design unit was not found.
+#         Region: /test_vlg_tst/i1
+#         Searched libraries:
+#             /opt/altera/13.0sp1/modelsim_ase/altera/vhdl/cyclone
+#             /opt/altera/13.0sp1/modelsim_ase/altera/verilog/cycloneiv
+#             /home/016/a0162534/workspace/quartus/test/simulation/modelsim/gate_work
+# ** Error: (vsim-3033) test_7_1200mv_100c_slow.vo(387): Instantiation of 'cycloneive_io_ibuf' failed. The design unit was not found.
+#         Region: /test_vlg_tst/i1
+#         Searched libraries:
+#             /opt/altera/13.0sp1/modelsim_ase/altera/vhdl/cyclone
+#             /opt/altera/13.0sp1/modelsim_ase/altera/verilog/cycloneiv
+#             /home/016/a0162534/workspace/quartus/test/simulation/modelsim/gate_work
+# ** Error: (vsim-3033) test_7_1200mv_100c_slow.vo(397): Instantiation of 'cycloneive_io_ibuf' failed. The design unit was not found.
+#         Region: /test_vlg_tst/i1
+#         Searched libraries:
+#             /opt/altera/13.0sp1/modelsim_ase/altera/vhdl/cyclone
+#             /opt/altera/13.0sp1/modelsim_ase/altera/verilog/cycloneiv
+#             /home/016/a0162534/workspace/quartus/test/simulation/modelsim/gate_work
+# ** Error: (vsim-3033) test_7_1200mv_100c_slow.vo(407): Instantiation of 'cycloneive_io_ibuf' failed. The design unit was not found.
+#         Region: /test_vlg_tst/i1
+#         Searched libraries:
+#             /opt/altera/13.0sp1/modelsim_ase/altera/vhdl/cyclone
+#             /opt/altera/13.0sp1/modelsim_ase/altera/verilog/cycloneiv
+#             /home/016/a0162534/workspace/quartus/test/simulation/modelsim/gate_work
+# ** Error: (vsim-3033) test_7_1200mv_100c_slow.vo(424): Instantiation of 'cycloneive_lcell_comb' failed. The design unit was not found.
+#         Region: /test_vlg_tst/i1
+#         Searched libraries:
+#             /opt/altera/13.0sp1/modelsim_ase/altera/vhdl/cyclone
+#             /opt/altera/13.0sp1/modelsim_ase/altera/verilog/cycloneiv
+#             /home/016/a0162534/workspace/quartus/test/simulation/modelsim/gate_work
+# ** Error: (vsim-3033) test_7_1200mv_100c_slow.vo(434): Instantiation of 'cycloneive_io_ibuf' failed. The design unit was not found.
+#         Region: /test_vlg_tst/i1
+#         Searched libraries:
+#             /opt/altera/13.0sp1/modelsim_ase/altera/vhdl/cyclone
+#             /opt/altera/13.0sp1/modelsim_ase/altera/verilog/cycloneiv
+#             /home/016/a0162534/workspace/quartus/test/simulation/modelsim/gate_work
+# ** Error: (vsim-3033) test_7_1200mv_100c_slow.vo(444): Instantiation of 'cycloneive_io_ibuf' failed. The design unit was not found.
+#         Region: /test_vlg_tst/i1
+#         Searched libraries:
+#             /opt/altera/13.0sp1/modelsim_ase/altera/vhdl/cyclone
+#             /opt/altera/13.0sp1/modelsim_ase/altera/verilog/cycloneiv
+#             /home/016/a0162534/workspace/quartus/test/simulation/modelsim/gate_work
+# ** Error: (vsim-3033) test_7_1200mv_100c_slow.vo(461): Instantiation of 'cycloneive_lcell_comb' failed. The design unit was not found.
+#         Region: /test_vlg_tst/i1
+#         Searched libraries:
+#             /opt/altera/13.0sp1/modelsim_ase/altera/vhdl/cyclone
+#             /opt/altera/13.0sp1/modelsim_ase/altera/verilog/cycloneiv
+#             /home/016/a0162534/workspace/quartus/test/simulation/modelsim/gate_work
+# ** Error: (vsim-3033) test_7_1200mv_100c_slow.vo(471): Instantiation of 'cycloneive_io_ibuf' failed. The design unit was not found.
+#         Region: /test_vlg_tst/i1
+#         Searched libraries:
+#             /opt/altera/13.0sp1/modelsim_ase/altera/vhdl/cyclone
+#             /opt/altera/13.0sp1/modelsim_ase/altera/verilog/cycloneiv
+#             /home/016/a0162534/workspace/quartus/test/simulation/modelsim/gate_work
+# ** Error: (vsim-3033) test_7_1200mv_100c_slow.vo(481): Instantiation of 'cycloneive_io_ibuf' failed. The design unit was not found.
+#         Region: /test_vlg_tst/i1
+#         Searched libraries:
+#             /opt/altera/13.0sp1/modelsim_ase/altera/vhdl/cyclone
+#             /opt/altera/13.0sp1/modelsim_ase/altera/verilog/cycloneiv
+#             /home/016/a0162534/workspace/quartus/test/simulation/modelsim/gate_work
+# ** Error: (vsim-3033) test_7_1200mv_100c_slow.vo(498): Instantiation of 'cycloneive_lcell_comb' failed. The design unit was not found.
+#         Region: /test_vlg_tst/i1
+#         Searched libraries:
+#             /opt/altera/13.0sp1/modelsim_ase/altera/vhdl/cyclone
+#             /opt/altera/13.0sp1/modelsim_ase/altera/verilog/cycloneiv
+#             /home/016/a0162534/workspace/quartus/test/simulation/modelsim/gate_work
+# ** Error: (vsim-3033) test_7_1200mv_100c_slow.vo(508): Instantiation of 'cycloneive_io_ibuf' failed. The design unit was not found.
+#         Region: /test_vlg_tst/i1
+#         Searched libraries:
+#             /opt/altera/13.0sp1/modelsim_ase/altera/vhdl/cyclone
+#             /opt/altera/13.0sp1/modelsim_ase/altera/verilog/cycloneiv
+#             /home/016/a0162534/workspace/quartus/test/simulation/modelsim/gate_work
+# ** Error: (vsim-3033) test_7_1200mv_100c_slow.vo(518): Instantiation of 'cycloneive_io_ibuf' failed. The design unit was not found.
+#         Region: /test_vlg_tst/i1
+#         Searched libraries:
+#             /opt/altera/13.0sp1/modelsim_ase/altera/vhdl/cyclone
+#             /opt/altera/13.0sp1/modelsim_ase/altera/verilog/cycloneiv
+#             /home/016/a0162534/workspace/quartus/test/simulation/modelsim/gate_work
+# ** Error: (vsim-3033) test_7_1200mv_100c_slow.vo(535): Instantiation of 'cycloneive_lcell_comb' failed. The design unit was not found.
+#         Region: /test_vlg_tst/i1
+#         Searched libraries:
+#             /opt/altera/13.0sp1/modelsim_ase/altera/vhdl/cyclone
+#             /opt/altera/13.0sp1/modelsim_ase/altera/verilog/cycloneiv
+#             /home/016/a0162534/workspace/quartus/test/simulation/modelsim/gate_work
+# ** Error: (vsim-3033) test_7_1200mv_100c_slow.vo(545): Instantiation of 'cycloneive_io_ibuf' failed. The design unit was not found.
+#         Region: /test_vlg_tst/i1
+#         Searched libraries:
+#             /opt/altera/13.0sp1/modelsim_ase/altera/vhdl/cyclone
+#             /opt/altera/13.0sp1/modelsim_ase/altera/verilog/cycloneiv
+#             /home/016/a0162534/workspace/quartus/test/simulation/modelsim/gate_work
+# ** Error: (vsim-3033) test_7_1200mv_100c_slow.vo(555): Instantiation of 'cycloneive_io_ibuf' failed. The design unit was not found.
+#         Region: /test_vlg_tst/i1
+#         Searched libraries:
+#             /opt/altera/13.0sp1/modelsim_ase/altera/vhdl/cyclone
+#             /opt/altera/13.0sp1/modelsim_ase/altera/verilog/cycloneiv
+#             /home/016/a0162534/workspace/quartus/test/simulation/modelsim/gate_work
+# ** Error: (vsim-3033) test_7_1200mv_100c_slow.vo(572): Instantiation of 'cycloneive_lcell_comb' failed. The design unit was not found.
+#         Region: /test_vlg_tst/i1
+#         Searched libraries:
+#             /opt/altera/13.0sp1/modelsim_ase/altera/vhdl/cyclone
+#             /opt/altera/13.0sp1/modelsim_ase/altera/verilog/cycloneiv
+#             /home/016/a0162534/workspace/quartus/test/simulation/modelsim/gate_work
+# ** Error: (vsim-3033) test_7_1200mv_100c_slow.vo(582): Instantiation of 'cycloneive_io_ibuf' failed. The design unit was not found.
+#         Region: /test_vlg_tst/i1
+#         Searched libraries:
+#             /opt/altera/13.0sp1/modelsim_ase/altera/vhdl/cyclone
+#             /opt/altera/13.0sp1/modelsim_ase/altera/verilog/cycloneiv
+#             /home/016/a0162534/workspace/quartus/test/simulation/modelsim/gate_work
+# ** Error: (vsim-3033) test_7_1200mv_100c_slow.vo(592): Instantiation of 'cycloneive_io_ibuf' failed. The design unit was not found.
+#         Region: /test_vlg_tst/i1
+#         Searched libraries:
+#             /opt/altera/13.0sp1/modelsim_ase/altera/vhdl/cyclone
+#             /opt/altera/13.0sp1/modelsim_ase/altera/verilog/cycloneiv
+#             /home/016/a0162534/workspace/quartus/test/simulation/modelsim/gate_work
+# ** Error: (vsim-3033) test_7_1200mv_100c_slow.vo(609): Instantiation of 'cycloneive_lcell_comb' failed. The design unit was not found.
+#         Region: /test_vlg_tst/i1
+#         Searched libraries:
+#             /opt/altera/13.0sp1/modelsim_ase/altera/vhdl/cyclone
+#             /opt/altera/13.0sp1/modelsim_ase/altera/verilog/cycloneiv
+#             /home/016/a0162534/workspace/quartus/test/simulation/modelsim/gate_work
+# ** Error: (vsim-3033) test_7_1200mv_100c_slow.vo(619): Instantiation of 'cycloneive_io_ibuf' failed. The design unit was not found.
+#         Region: /test_vlg_tst/i1
+#         Searched libraries:
+#             /opt/altera/13.0sp1/modelsim_ase/altera/vhdl/cyclone
+#             /opt/altera/13.0sp1/modelsim_ase/altera/verilog/cycloneiv
+#             /home/016/a0162534/workspace/quartus/test/simulation/modelsim/gate_work
+# ** Error: (vsim-3033) test_7_1200mv_100c_slow.vo(629): Instantiation of 'cycloneive_io_ibuf' failed. The design unit was not found.
+#         Region: /test_vlg_tst/i1
+#         Searched libraries:
+#             /opt/altera/13.0sp1/modelsim_ase/altera/vhdl/cyclone
+#             /opt/altera/13.0sp1/modelsim_ase/altera/verilog/cycloneiv
+#             /home/016/a0162534/workspace/quartus/test/simulation/modelsim/gate_work
+# ** Error: (vsim-3033) test_7_1200mv_100c_slow.vo(646): Instantiation of 'cycloneive_lcell_comb' failed. The design unit was not found.
+#         Region: /test_vlg_tst/i1
+#         Searched libraries:
+#             /opt/altera/13.0sp1/modelsim_ase/altera/vhdl/cyclone
+#             /opt/altera/13.0sp1/modelsim_ase/altera/verilog/cycloneiv
+#             /home/016/a0162534/workspace/quartus/test/simulation/modelsim/gate_work
+# ** Error: (vsim-3033) test_7_1200mv_100c_slow.vo(656): Instantiation of 'cycloneive_io_ibuf' failed. The design unit was not found.
+#         Region: /test_vlg_tst/i1
+#         Searched libraries:
+#             /opt/altera/13.0sp1/modelsim_ase/altera/vhdl/cyclone
+#             /opt/altera/13.0sp1/modelsim_ase/altera/verilog/cycloneiv
+#             /home/016/a0162534/workspace/quartus/test/simulation/modelsim/gate_work
+# ** Error: (vsim-3033) test_7_1200mv_100c_slow.vo(666): Instantiation of 'cycloneive_io_ibuf' failed. The design unit was not found.
+#         Region: /test_vlg_tst/i1
+#         Searched libraries:
+#             /opt/altera/13.0sp1/modelsim_ase/altera/vhdl/cyclone
+#             /opt/altera/13.0sp1/modelsim_ase/altera/verilog/cycloneiv
+#             /home/016/a0162534/workspace/quartus/test/simulation/modelsim/gate_work
+# ** Error: (vsim-3033) test_7_1200mv_100c_slow.vo(683): Instantiation of 'cycloneive_lcell_comb' failed. The design unit was not found.
+#         Region: /test_vlg_tst/i1
+#         Searched libraries:
+#             /opt/altera/13.0sp1/modelsim_ase/altera/vhdl/cyclone
+#             /opt/altera/13.0sp1/modelsim_ase/altera/verilog/cycloneiv
+#             /home/016/a0162534/workspace/quartus/test/simulation/modelsim/gate_work
+# ** Error: (vsim-3033) test_7_1200mv_100c_slow.vo(693): Instantiation of 'cycloneive_io_ibuf' failed. The design unit was not found.
+#         Region: /test_vlg_tst/i1
+#         Searched libraries:
+#             /opt/altera/13.0sp1/modelsim_ase/altera/vhdl/cyclone
+#             /opt/altera/13.0sp1/modelsim_ase/altera/verilog/cycloneiv
+#             /home/016/a0162534/workspace/quartus/test/simulation/modelsim/gate_work
+# ** Error: (vsim-3033) test_7_1200mv_100c_slow.vo(703): Instantiation of 'cycloneive_io_ibuf' failed. The design unit was not found.
+#         Region: /test_vlg_tst/i1
+#         Searched libraries:
+#             /opt/altera/13.0sp1/modelsim_ase/altera/vhdl/cyclone
+#             /opt/altera/13.0sp1/modelsim_ase/altera/verilog/cycloneiv
+#             /home/016/a0162534/workspace/quartus/test/simulation/modelsim/gate_work
+# ** Error: (vsim-3033) test_7_1200mv_100c_slow.vo(720): Instantiation of 'cycloneive_lcell_comb' failed. The design unit was not found.
+#         Region: /test_vlg_tst/i1
+#         Searched libraries:
+#             /opt/altera/13.0sp1/modelsim_ase/altera/vhdl/cyclone
+#             /opt/altera/13.0sp1/modelsim_ase/altera/verilog/cycloneiv
+#             /home/016/a0162534/workspace/quartus/test/simulation/modelsim/gate_work
+# ** Error: (vsim-3033) test_7_1200mv_100c_slow.vo(730): Instantiation of 'cycloneive_io_ibuf' failed. The design unit was not found.
+#         Region: /test_vlg_tst/i1
+#         Searched libraries:
+#             /opt/altera/13.0sp1/modelsim_ase/altera/vhdl/cyclone
+#             /opt/altera/13.0sp1/modelsim_ase/altera/verilog/cycloneiv
+#             /home/016/a0162534/workspace/quartus/test/simulation/modelsim/gate_work
+# ** Error: (vsim-3033) test_7_1200mv_100c_slow.vo(740): Instantiation of 'cycloneive_io_ibuf' failed. The design unit was not found.
+#         Region: /test_vlg_tst/i1
+#         Searched libraries:
+#             /opt/altera/13.0sp1/modelsim_ase/altera/vhdl/cyclone
+#             /opt/altera/13.0sp1/modelsim_ase/altera/verilog/cycloneiv
+#             /home/016/a0162534/workspace/quartus/test/simulation/modelsim/gate_work
+# ** Error: (vsim-3033) test_7_1200mv_100c_slow.vo(757): Instantiation of 'cycloneive_lcell_comb' failed. The design unit was not found.
+#         Region: /test_vlg_tst/i1
+#         Searched libraries:
+#             /opt/altera/13.0sp1/modelsim_ase/altera/vhdl/cyclone
+#             /opt/altera/13.0sp1/modelsim_ase/altera/verilog/cycloneiv
+#             /home/016/a0162534/workspace/quartus/test/simulation/modelsim/gate_work
+# ** Error: (vsim-3033) test_7_1200mv_100c_slow.vo(767): Instantiation of 'cycloneive_io_ibuf' failed. The design unit was not found.
+#         Region: /test_vlg_tst/i1
+#         Searched libraries:
+#             /opt/altera/13.0sp1/modelsim_ase/altera/vhdl/cyclone
+#             /opt/altera/13.0sp1/modelsim_ase/altera/verilog/cycloneiv
+#             /home/016/a0162534/workspace/quartus/test/simulation/modelsim/gate_work
+# ** Error: (vsim-3033) test_7_1200mv_100c_slow.vo(777): Instantiation of 'cycloneive_io_ibuf' failed. The design unit was not found.
+#         Region: /test_vlg_tst/i1
+#         Searched libraries:
+#             /opt/altera/13.0sp1/modelsim_ase/altera/vhdl/cyclone
+#             /opt/altera/13.0sp1/modelsim_ase/altera/verilog/cycloneiv
+#             /home/016/a0162534/workspace/quartus/test/simulation/modelsim/gate_work
+# ** Error: (vsim-3033) test_7_1200mv_100c_slow.vo(794): Instantiation of 'cycloneive_lcell_comb' failed. The design unit was not found.
+#         Region: /test_vlg_tst/i1
+#         Searched libraries:
+#             /opt/altera/13.0sp1/modelsim_ase/altera/vhdl/cyclone
+#             /opt/altera/13.0sp1/modelsim_ase/altera/verilog/cycloneiv
+#             /home/016/a0162534/workspace/quartus/test/simulation/modelsim/gate_work
+# ** Error: (vsim-3033) test_7_1200mv_100c_slow.vo(804): Instantiation of 'cycloneive_io_ibuf' failed. The design unit was not found.
+#         Region: /test_vlg_tst/i1
+#         Searched libraries:
+#             /opt/altera/13.0sp1/modelsim_ase/altera/vhdl/cyclone
+#             /opt/altera/13.0sp1/modelsim_ase/altera/verilog/cycloneiv
+#             /home/016/a0162534/workspace/quartus/test/simulation/modelsim/gate_work
+# ** Error: (vsim-3033) test_7_1200mv_100c_slow.vo(814): Instantiation of 'cycloneive_io_ibuf' failed. The design unit was not found.
+#         Region: /test_vlg_tst/i1
+#         Searched libraries:
+#             /opt/altera/13.0sp1/modelsim_ase/altera/vhdl/cyclone
+#             /opt/altera/13.0sp1/modelsim_ase/altera/verilog/cycloneiv
+#             /home/016/a0162534/workspace/quartus/test/simulation/modelsim/gate_work
+# ** Error: (vsim-3033) test_7_1200mv_100c_slow.vo(831): Instantiation of 'cycloneive_lcell_comb' failed. The design unit was not found.
+#         Region: /test_vlg_tst/i1
+#         Searched libraries:
+#             /opt/altera/13.0sp1/modelsim_ase/altera/vhdl/cyclone
+#             /opt/altera/13.0sp1/modelsim_ase/altera/verilog/cycloneiv
+#             /home/016/a0162534/workspace/quartus/test/simulation/modelsim/gate_work
+# ** Error: (vsim-3033) test_7_1200mv_100c_slow.vo(841): Instantiation of 'cycloneive_io_ibuf' failed. The design unit was not found.
+#         Region: /test_vlg_tst/i1
+#         Searched libraries:
+#             /opt/altera/13.0sp1/modelsim_ase/altera/vhdl/cyclone
+#             /opt/altera/13.0sp1/modelsim_ase/altera/verilog/cycloneiv
+#             /home/016/a0162534/workspace/quartus/test/simulation/modelsim/gate_work
+# ** Error: (vsim-3033) test_7_1200mv_100c_slow.vo(851): Instantiation of 'cycloneive_io_ibuf' failed. The design unit was not found.
+#         Region: /test_vlg_tst/i1
+#         Searched libraries:
+#             /opt/altera/13.0sp1/modelsim_ase/altera/vhdl/cyclone
+#             /opt/altera/13.0sp1/modelsim_ase/altera/verilog/cycloneiv
+#             /home/016/a0162534/workspace/quartus/test/simulation/modelsim/gate_work
+# ** Error: (vsim-3033) test_7_1200mv_100c_slow.vo(868): Instantiation of 'cycloneive_lcell_comb' failed. The design unit was not found.
+#         Region: /test_vlg_tst/i1
+#         Searched libraries:
+#             /opt/altera/13.0sp1/modelsim_ase/altera/vhdl/cyclone
+#             /opt/altera/13.0sp1/modelsim_ase/altera/verilog/cycloneiv
+#             /home/016/a0162534/workspace/quartus/test/simulation/modelsim/gate_work
+# ** Error: (vsim-3033) test_7_1200mv_100c_slow.vo(878): Instantiation of 'cycloneive_io_ibuf' failed. The design unit was not found.
+#         Region: /test_vlg_tst/i1
+#         Searched libraries:
+#             /opt/altera/13.0sp1/modelsim_ase/altera/vhdl/cyclone
+#             /opt/altera/13.0sp1/modelsim_ase/altera/verilog/cycloneiv
+#             /home/016/a0162534/workspace/quartus/test/simulation/modelsim/gate_work
+# ** Error: (vsim-3033) test_7_1200mv_100c_slow.vo(888): Instantiation of 'cycloneive_io_ibuf' failed. The design unit was not found.
+#         Region: /test_vlg_tst/i1
+#         Searched libraries:
+#             /opt/altera/13.0sp1/modelsim_ase/altera/vhdl/cyclone
+#             /opt/altera/13.0sp1/modelsim_ase/altera/verilog/cycloneiv
+#             /home/016/a0162534/workspace/quartus/test/simulation/modelsim/gate_work
+# ** Error: (vsim-3033) test_7_1200mv_100c_slow.vo(905): Instantiation of 'cycloneive_lcell_comb' failed. The design unit was not found.
+#         Region: /test_vlg_tst/i1
+#         Searched libraries:
+#             /opt/altera/13.0sp1/modelsim_ase/altera/vhdl/cyclone
+#             /opt/altera/13.0sp1/modelsim_ase/altera/verilog/cycloneiv
+#             /home/016/a0162534/workspace/quartus/test/simulation/modelsim/gate_work
+# ** Error: (vsim-3033) test_7_1200mv_100c_slow.vo(915): Instantiation of 'cycloneive_io_ibuf' failed. The design unit was not found.
+#         Region: /test_vlg_tst/i1
+#         Searched libraries:
+#             /opt/altera/13.0sp1/modelsim_ase/altera/vhdl/cyclone
+#             /opt/altera/13.0sp1/modelsim_ase/altera/verilog/cycloneiv
+#             /home/016/a0162534/workspace/quartus/test/simulation/modelsim/gate_work
+# ** Error: (vsim-3033) test_7_1200mv_100c_slow.vo(925): Instantiation of 'cycloneive_io_ibuf' failed. The design unit was not found.
+#         Region: /test_vlg_tst/i1
+#         Searched libraries:
+#             /opt/altera/13.0sp1/modelsim_ase/altera/vhdl/cyclone
+#             /opt/altera/13.0sp1/modelsim_ase/altera/verilog/cycloneiv
+#             /home/016/a0162534/workspace/quartus/test/simulation/modelsim/gate_work
+# ** Error: (vsim-3033) test_7_1200mv_100c_slow.vo(942): Instantiation of 'cycloneive_lcell_comb' failed. The design unit was not found.
+#         Region: /test_vlg_tst/i1
+#         Searched libraries:
+#             /opt/altera/13.0sp1/modelsim_ase/altera/vhdl/cyclone
+#             /opt/altera/13.0sp1/modelsim_ase/altera/verilog/cycloneiv
+#             /home/016/a0162534/workspace/quartus/test/simulation/modelsim/gate_work
+# ** Error: (vsim-3033) test_7_1200mv_100c_slow.vo(952): Instantiation of 'cycloneive_io_ibuf' failed. The design unit was not found.
+#         Region: /test_vlg_tst/i1
+#         Searched libraries:
+#             /opt/altera/13.0sp1/modelsim_ase/altera/vhdl/cyclone
+#             /opt/altera/13.0sp1/modelsim_ase/altera/verilog/cycloneiv
+#             /home/016/a0162534/workspace/quartus/test/simulation/modelsim/gate_work
+# ** Error: (vsim-3033) test_7_1200mv_100c_slow.vo(962): Instantiation of 'cycloneive_io_ibuf' failed. The design unit was not found.
+#         Region: /test_vlg_tst/i1
+#         Searched libraries:
+#             /opt/altera/13.0sp1/modelsim_ase/altera/vhdl/cyclone
+#             /opt/altera/13.0sp1/modelsim_ase/altera/verilog/cycloneiv
+#             /home/016/a0162534/workspace/quartus/test/simulation/modelsim/gate_work
+# ** Error: (vsim-3033) test_7_1200mv_100c_slow.vo(979): Instantiation of 'cycloneive_lcell_comb' failed. The design unit was not found.
+#         Region: /test_vlg_tst/i1
+#         Searched libraries:
+#             /opt/altera/13.0sp1/modelsim_ase/altera/vhdl/cyclone
+#             /opt/altera/13.0sp1/modelsim_ase/altera/verilog/cycloneiv
+#             /home/016/a0162534/workspace/quartus/test/simulation/modelsim/gate_work
+# Error loading design
+# Error: Error loading design 
+#        Pausing macro execution 
+# MACRO ./test_run_msim_gate_verilog.do PAUSED at line 12
+vsim -L cycloneive_ver -voptargs=+acc gate_work.test_vlg_tst
+# vsim -L cycloneive_ver -voptargs=+acc gate_work.test_vlg_tst 
+# Loading work.test_vlg_tst
+# Loading work.test
+# Loading cycloneive_ver.cycloneive_io_obuf
+# Loading cycloneive_ver.cycloneive_io_ibuf
+# Loading cycloneive_ver.cycloneive_lcell_comb
+# Loading instances from test_7_1200mv_100c_v_slow.sdo
+# Loading timing data from test_7_1200mv_100c_v_slow.sdo
+# ** Note: (vsim-3587) SDF Backannotation Successfully Completed.
+#    Time: 0 ps  Iteration: 0  Instance: /test_vlg_tst File: /home/016/a0162534/workspace/quartus/test/simulation/modelsim/test_test1.vt
+add wave -position end  sim:/test_vlg_tst/A
+add wave -position end  sim:/test_vlg_tst/B
+add wave -position end  sim:/test_vlg_tst/S
+add wave -position end  sim:/test_vlg_tst/out
+run
+# Running testbench

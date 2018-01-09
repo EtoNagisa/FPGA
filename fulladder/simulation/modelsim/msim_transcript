@@ -16,7 +16,7 @@
 # Top level modules:
 # 	fulladder
 # 
-# vlog -vlog01compat -work work +incdir+/home/016/a0162534/workspace/quartus/adder/simulation/modelsim {/home/016/a0162534/workspace/quartus/adder/simulation/modelsim/fulladder_test1.vt}
+# vlog -vlog01compat -work work +incdir+/home/016/a0162534/workspace/quartus/fulladder/simulation/modelsim {/home/016/a0162534/workspace/quartus/fulladder/simulation/modelsim/fulladder_test1.vt}
 # Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
 # -- Compiling module fulladder_vlg_tst
 # 
@@ -25,7 +25,7 @@
 # 
 # vsim -t 1ps +transport_int_delays +transport_path_delays -L altera_ver -L cycloneive_ver -L gate_work -L work -voptargs="+acc"  test1
 # vsim +transport_int_delays +transport_path_delays -L altera_ver -L cycloneive_ver -L gate_work -L work -voptargs=\"+acc\" -t 1ps test1 
-# ** Error: (vsim-3170) Could not find '/home/016/a0162534/workspace/quartus/adder/simulation/modelsim/gate_work.test1'.
+# ** Error: (vsim-3170) Could not find '/home/016/a0162534/workspace/quartus/fulladder/simulation/modelsim/gate_work.test1'.
 # Error loading design
 # Error: Error loading design 
 #        Pausing macro execution 
@@ -37,25 +37,13 @@ vsim +transport_int_delays +transport_path_delays -L altera_ver -L cycloneive_ve
 # Loading cycloneive_ver.cycloneive_io_obuf
 # Loading cycloneive_ver.cycloneive_io_ibuf
 # Loading cycloneive_ver.cycloneive_lcell_comb
-# SDF 10.1d Compiler 2012.11 Nov  2 2012
 # Loading instances from fulladder_7_1200mv_100c_v_slow.sdo
 # Loading timing data from fulladder_7_1200mv_100c_v_slow.sdo
 # ** Note: (vsim-3587) SDF Backannotation Successfully Completed.
-#    Time: 0 ps  Iteration: 0  Instance: /fulladder_vlg_tst File: /home/016/a0162534/workspace/quartus/adder/simulation/modelsim/fulladder_test1.vt
-add wave -position end  sim:/fulladder_vlg_tst/A
-# ** Error: Unable to lock WLF file "vsim.wlf". Retrying 1 times, errno 11
-# ** Error: Unable to lock WLF file "vsim.wlf". Retrying 2 times, errno 11
-# ** Error: Unable to lock WLF file "vsim.wlf". Retrying 3 times, errno 11
-# ** Error: Cannot lock WLF file: "vsim.wlf"
-#           errno 11: Resource temporarily unavailable.
-# ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
-#           File in use by: a0162534  Hostname: ws60  ProcessID: 3771
-#           Attempting to use alternate WLF file "./wlft3uPJ2i".
-# ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
-#           Using alternate file: ./wlft3uPJ2i
+#    Time: 0 ps  Iteration: 0  Instance: /fulladder_vlg_tst File: /home/016/a0162534/workspace/quartus/fulladder/simulation/modelsim/fulladder_test1.vt
 add wave -position end  sim:/fulladder_vlg_tst/A
 add wave -position end  sim:/fulladder_vlg_tst/B
-add wave -position end  sim:/fulladder_vlg_tst/Cin
+add wave -position end  sim:/fulladder_vlg_tst/C
 add wave -position end  sim:/fulladder_vlg_tst/carry
 add wave -position end  sim:/fulladder_vlg_tst/sum
 run

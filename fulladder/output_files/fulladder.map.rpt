@@ -1,5 +1,5 @@
 Analysis & Synthesis report for fulladder
-Tue Dec 26 13:51:12 2017
+Tue Jan  9 15:19:48 2018
 Quartus II 32-bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Full Version
 
 
@@ -41,7 +41,7 @@ applicable agreement for further details.
 +---------------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                          ;
 +------------------------------------+--------------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Tue Dec 26 13:51:12 2017            ;
+; Analysis & Synthesis Status        ; Successful - Tue Jan  9 15:19:47 2018            ;
 ; Quartus II 32-bit Version          ; 13.0.1 Build 232 06/12/2013 SP 1 SJ Full Version ;
 ; Revision Name                      ; fulladder                                        ;
 ; Top-level Entity Name              ; fulladder                                        ;
@@ -162,14 +162,14 @@ applicable agreement for further details.
 +----------------------------+-------------+
 
 
-+--------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Source Files Read                                                                                                                       ;
-+----------------------------------+-----------------+------------------------------------+----------------------------------------------------------+---------+
-; File Name with User-Entered Path ; Used in Netlist ; File Type                          ; File Name with Absolute Path                             ; Library ;
-+----------------------------------+-----------------+------------------------------------+----------------------------------------------------------+---------+
-; halfadder.bdf                    ; yes             ; User Block Diagram/Schematic File  ; /home/016/a0162534/workspace/quartus/adder/halfadder.bdf ;         ;
-; fulladder.bdf                    ; yes             ; User Block Diagram/Schematic File  ; /home/016/a0162534/workspace/quartus/adder/fulladder.bdf ;         ;
-+----------------------------------+-----------------+------------------------------------+----------------------------------------------------------+---------+
++------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Source Files Read                                                                                                                           ;
++----------------------------------+-----------------+------------------------------------+--------------------------------------------------------------+---------+
+; File Name with User-Entered Path ; Used in Netlist ; File Type                          ; File Name with Absolute Path                                 ; Library ;
++----------------------------------+-----------------+------------------------------------+--------------------------------------------------------------+---------+
+; halfadder.bdf                    ; yes             ; User Block Diagram/Schematic File  ; /home/016/a0162534/workspace/quartus/fulladder/halfadder.bdf ;         ;
+; fulladder.bdf                    ; yes             ; User Block Diagram/Schematic File  ; /home/016/a0162534/workspace/quartus/fulladder/fulladder.bdf ;         ;
++----------------------------------+-----------------+------------------------------------+--------------------------------------------------------------+---------+
 
 
 +-------------------------------------------------------+
@@ -243,15 +243,13 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 Info: *******************************************************************
 Info: Running Quartus II 32-bit Analysis & Synthesis
     Info: Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Full Version
-    Info: Processing started: Tue Dec 26 13:51:10 2017
+    Info: Processing started: Tue Jan  9 15:19:46 2018
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off fulladder -c fulladder
 Info (20030): Parallel compilation is enabled and will use 2 of the 2 processors detected
 Info (12021): Found 1 design units, including 1 entities, in source file halfadder.bdf
     Info (12023): Found entity 1: halfadder
 Info (12021): Found 1 design units, including 1 entities, in source file fulladder.bdf
     Info (12023): Found entity 1: fulladder
-Info (12021): Found 1 design units, including 1 entities, in source file adder_4bi.bdf
-    Info (12023): Found entity 1: adder_4bi
 Info (12127): Elaborating entity "fulladder" for the top level hierarchy
 Info (12128): Elaborating entity "halfadder" for hierarchy "halfadder:inst1"
 Info (286030): Timing-Driven Synthesis is running
@@ -263,7 +261,7 @@ Info (21057): Implemented 7 device resources after synthesis - the final resourc
     Info (21061): Implemented 2 logic cells
 Info: Quartus II 32-bit Analysis & Synthesis was successful. 0 errors, 0 warnings
     Info: Peak virtual memory: 349 megabytes
-    Info: Processing ended: Tue Dec 26 13:51:12 2017
+    Info: Processing ended: Tue Jan  9 15:19:48 2018
     Info: Elapsed time: 00:00:02
     Info: Total CPU time (on all processors): 00:00:02
 

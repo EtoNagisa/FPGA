@@ -17,14 +17,14 @@
 // suit user's needs .Comments are provided in each section to help the user    
 // fill out necessary details.                                                  
 // *****************************************************************************
-// Generated on "12/19/2017 15:57:44"
+// Generated on "01/09/2018 15:20:34"
                                                                                 
 // Verilog Test Bench template for design : fulladder
 // 
 // Simulation tool : ModelSim-Altera (Verilog)
 // 
 
-`timescale 1 ns/ 1 ps
+`timescale 1 ps/ 1 ps
 module fulladder_vlg_tst();
 // constants                                           
 // general purpose registers
@@ -32,7 +32,7 @@ reg eachvec;
 // test vector input registers
 reg A;
 reg B;
-reg Cin;
+reg C;
 // wires                                               
 wire carry;
 wire sum;
@@ -42,15 +42,17 @@ fulladder i1 (
 // port map - connection between master ports and signals/registers   
 	.A(A),
 	.B(B),
+	.C(C),
 	.carry(carry),
-	.Cin(Cin),
 	.sum(sum)
 );
 initial                                                
 begin                                                  
 // code that executes only once                        
 // insert code here --> begin                          
-                                                       
+A<=0;
+B<=0;
+C<=0;                                           
 // --> end                                             
 $display("Running testbench");                       
 end                                                    
@@ -60,24 +62,10 @@ always
 begin                                                  
 // code executes for every event on sensitivity list   
 // insert code here --> begin                          
-                                                       
+#100
+A<=1;                                  
 @eachvec;                                              
 // --> end                                             
-end   
-
-always begin
-	#100	
-	A<=~A;  
-end
-
-always begin
-	#200
-	B<=~B;
-end
-
-always begin
-	#400
-	Cin<=~Cin;
-end                                                 
+end                                                    
 endmodule
 
